@@ -1,13 +1,14 @@
+from tkinter.constants import RIGHT
 from turtle import Turtle
 STARTIGN_POSITION=[(0,0),(-20,0),(-40,0)]
 DISTANCE=20
 UP=90
 DOWN=270
 LEFT=180
-RIHGT=0
+RIGHT=0
 
 class Snake:
-    def __int__(self):
+    def __init__(self):
         self.segments = []
         self.create_snake()
         self.head=self.segments[0]
@@ -27,20 +28,21 @@ class Snake:
             new_x=self.segments[seg-1].xcor()
             new_y = self.segments[seg - 1].ycor()
             self.segments[seg].goto(new_x,new_y)
-        self.segments[0].forward(DISTANCE)
+        self.head.forward(DISTANCE)
+
 # changing_direction
     def up(self):
-        if self.head.setheading()!=DOWN:
+        if self.head.heading()!=DOWN:
             self.head.setheading(UP)
     def down(self):
-        if self.head.setheading() != UP:
+        if self.head.heading() != UP:
             self.head.setheading(DOWN)
 
     def left(self):
-        if self.head.setheading() != RIHGT:
+        if self.head.heading() != RIGHT:
             self.head.setheading(LEFT)
 
     def right(self):
-        if self.head.setheading() != LEFT:
-            self.head.setheading(RIHGT)
+        if self.head.heading() != LEFT:
+            self.head.setheading(RIGHT)
 
