@@ -7,3 +7,11 @@ The game includes food generation, score tracking, snake growth, and collision d
 - Score increases when food is eaten
 - Game over when snake hits the wall
 - Game over when snake collides with itself
+
+**Concepts Used:**
+
+- Python programming
+- Object-Oriented Programming (OOP)
+- Turtle graphics
+- Keyboard event handling
+- Game loop and collision detection
