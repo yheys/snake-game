@@ -1,4 +1,3 @@
-from tkinter.constants import RIGHT
 from turtle import Turtle
 STARTIGN_POSITION=[(0,0),(-20,0),(-40,0)]
 DISTANCE=20
@@ -18,9 +17,19 @@ class Snake:
         for position in STARTIGN_POSITION:
             segment = Turtle("square")
             segment.color("white")
+            segment.shapesize(1,1)
             segment.penup()
             segment.goto(position)
             self.segments.append(segment)
+    def new_body(self):
+        body=Turtle("square")
+        body.color("white")
+        body.shapesize(1, 1)
+        body.penup()
+        body_x=self.segments[len(self.segments)-1].xcor()
+        body_y =self.segments[len(self.segments)-1].ycor()
+        body.goto(body_x,body_y)
+        self.segments.append(body)
 
 #make a movement in my snake
     def move(self):
