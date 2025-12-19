@@ -8,6 +8,7 @@ The game includes food generation, score tracking, snake growth, and collision d
 - Game over when snake hits the wall
 - Game over when snake collides with itself
 - save the highest score.
+- reset the game untile end.
 
 **Concepts Used:**
 
