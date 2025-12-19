@@ -7,6 +7,7 @@ The game includes food generation, score tracking, snake growth, and collision d
 - Score increases when food is eaten
 - Game over when snake hits the wall
 - Game over when snake collides with itself
+- save the highest score.
 
 **Concepts Used:**
 
@@ -15,3 +16,4 @@ The game includes food generation, score tracking, snake growth, and collision d
 - Turtle graphics
 - Keyboard event handling
 - Game loop and collision detection
+- Store the data after run the code
